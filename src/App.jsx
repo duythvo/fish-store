@@ -9,13 +9,12 @@ function App() {
   return (
     <div className="bg-slate-50 font-sans w-full xl:flex xl:h-screen xl:overflow-hidden">
 
-      {/* Left Column - Scrollable content */}
+      {/* Left Column - Content */}
       <div className="w-full xl:w-1/2 xl:h-screen xl:overflow-y-auto">
-        <main className="min-h-screen xl:min-h-0 xl:h-full flex flex-col items-center justify-center px-6 sm:px-12 md:px-20 lg:px-32 xl:px-12 py-12">
-          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+        <main className="min-h-screen xl:min-h-0 xl:h-full flex flex-col items-center justify-center px-5 py-10">
+          <div className="w-full max-w-xs sm:max-w-sm">
             <Profile data={siteData.profile} />
-
-            <div className="mt-6 space-y-3 md:space-y-4 lg:space-y-5">
+            <div className="mt-5 space-y-3">
               {siteData.links.map((link, index) => (
                 <LinkCard key={index} link={link} index={index} />
               ))}
