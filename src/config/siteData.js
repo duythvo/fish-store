@@ -34,6 +34,12 @@ export const getSiteData = () => {
         color: import.meta.env.VITE_LINK_4_COLOR || 'black',
       },
       {
+        url: import.meta.env.VITE_LINK_7_URL || 'https://zalo.me/0966888370',
+        label: import.meta.env.VITE_LINK_7_LABEL || 'Zalo Hotline: 0966 888 370',
+        icon: import.meta.env.VITE_LINK_7_ICON || 'message-circle',
+        color: import.meta.env.VITE_LINK_7_COLOR || 'green',
+      },
+      {
         url: import.meta.env.VITE_LINK_5_URL || 'tel:0966888370',
         label: import.meta.env.VITE_LINK_5_LABEL || 'Hotline Mini Tank: 0966 888 370',
         icon: import.meta.env.VITE_LINK_5_ICON || 'phone',
