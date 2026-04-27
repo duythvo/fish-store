@@ -1,4 +1,4 @@
-import { BadgeCheck } from 'lucide-react';
+
 
 export default function Profile({ data }) {
   return (
@@ -28,7 +28,6 @@ export default function Profile({ data }) {
       <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#427A5B] to-[#5a9e78]
                       text-white px-4 py-2 rounded-full text-xs font-semibold
                       shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 cursor-default">
-        <BadgeCheck className="w-3.5 h-3.5 text-white shrink-0" />
         {data.badgeText}
       </div>
     </div>

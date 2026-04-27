@@ -12,7 +12,7 @@ function App() {
       {/* Left Column - Content */}
       <div className="w-full xl:w-1/2 xl:h-screen xl:overflow-y-auto">
         <main className="min-h-screen xl:min-h-0 xl:h-full flex flex-col items-center justify-center px-5 py-10">
-          <div className="w-full max-w-xs sm:max-w-sm">
+          <div className="w-full max-w-sm sm:max-w-md">
             <Profile data={siteData.profile} />
             <div className="mt-5 space-y-3">
               {siteData.links.map((link, index) => (
