@@ -19,11 +19,6 @@ export default function Profile({ data }) {
         {data.name}
       </h1>
 
-      {/* Description */}
-      <p className="text-slate-500 mb-5 text-sm max-w-xs leading-relaxed">
-        {data.description}
-      </p>
-
       {/* Badge */}
       <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#427A5B] to-[#5a9e78]
                       text-white px-4 py-2 rounded-full text-xs font-semibold

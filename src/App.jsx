@@ -2,6 +2,7 @@ import { getSiteData } from './config/siteData';
 import Profile from './components/Profile';
 import LinkCard from './components/LinkCard';
 import HeroImage from './components/HeroImage';
+import Footer from './components/Footer';
 
 function App() {
   const siteData = getSiteData();
@@ -19,6 +20,10 @@ function App() {
                 <LinkCard key={index} link={link} index={index} />
               ))}
             </div>
+            <Footer
+              description={siteData.profile.description}
+              phoneLink={siteData.footerPhone}
+            />
           </div>
         </main>
       </div>
