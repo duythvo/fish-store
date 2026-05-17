@@ -4,6 +4,8 @@ export const getSiteData = () => {
     profile: {
       name: import.meta.env.VITE_PROFILE_NAME || 'Long Vu Fish Store',
       description: import.meta.env.VITE_PROFILE_DESC || 'Chuyên cá cảnh - hồ cá - cá săn mồi',
+      address: import.meta.env.VITE_PROFILE_DESC || import.meta.env.VITE_ADDRESS || 'Xem đường đi đến cửa hàng',
+      mapUrl: import.meta.env.VITE_MAP_URL || 'https://maps.app.goo.gl/2imfEgiUtV4ybyjBA',
       badgeText: import.meta.env.VITE_BADGE_TEXT || 'HƠN 5000+ KHÁCH HÀNG HÀI LÒNG',
       avatarUrl: import.meta.env.VITE_AVATAR_IMAGE || 'https://res.cloudinary.com/ddoxrhcwj/image/upload/v1777292818/965cf6ee-9253-4fd0-a5be-714a5846e847_hns0a3.jpg',
     },

@@ -21,7 +21,8 @@ function App() {
               ))}
             </div>
             <Footer
-              description={siteData.profile.description}
+              description={siteData.profile.address}
+              mapUrl={siteData.profile.mapUrl}
               phoneLink={siteData.footerPhone}
             />
           </div>

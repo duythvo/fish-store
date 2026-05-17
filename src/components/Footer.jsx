@@ -1,15 +1,30 @@
-import { MapPin, Phone } from 'lucide-react';
+import { ExternalLink, MapPin, Phone } from 'lucide-react';
 
-export default function Footer({ description, phoneLink }) {
+export default function Footer({ description, mapUrl, phoneLink }) {
   return (
     <footer className="w-full mt-6 border-t border-slate-200">
       <div className="flex flex-col items-center gap-3 py-5 px-4">
 
         {/* Address */}
-        {description && (
-          <div className="flex items-start gap-2 text-slate-500 text-xs text-center max-w-xs leading-relaxed">
-            <MapPin size={14} className="mt-0.5 flex-shrink-0 text-[#427A5B]" />
-            <span>{description}</span>
+        {description && mapUrl && (
+          <div className="w-full max-w-xs sm:max-w-sm rounded-2xl border border-[#427A5B]/15 bg-white px-4 py-3 shadow-sm">
+            <a
+              href={mapUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-center gap-2 text-xs sm:text-sm text-slate-500 leading-relaxed transition-colors hover:text-slate-700"
+              aria-label={`Mở Google Maps cho địa chỉ ${description}`}
+              title="Mở Google Maps"
+            >
+              <MapPin size={14} className="flex-shrink-0 text-[#427A5B] transition-transform duration-300 group-hover:-translate-y-0.5" />
+              <span className="min-w-0 text-left">
+                <span>{description}</span>
+                <span className="ml-1 inline-flex h-5 w-5 align-middle items-center justify-center rounded-full text-[#427A5B] transition-colors group-hover:bg-[#427A5B]/10 group-hover:text-[#2f5d40]">
+                  <ExternalLink size={12} />
+                  <span className="sr-only">Mở Google Maps</span>
+                </span>
+              </span>
+            </a>
           </div>
         )}
 
